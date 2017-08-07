@@ -20,9 +20,8 @@ export const sequelize = new Sequelize(config.db.database, config.db.user, confi
 });
 
 
-
 class SequelizeHelper {
-	static defineModel(definition) {
+	static defineModel(definition)   {
 		return sequelize.define(definition.name, definition.model, definition.options);
 	}
 }
@@ -33,4 +32,3 @@ export const Models = {
 	User: SequelizeHelper.defineModel(UserDefinition),
 	UserRole: SequelizeHelper.defineModel(UserRoleDefinition)
 };
-

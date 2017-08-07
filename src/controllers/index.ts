@@ -6,5 +6,4 @@ router.get('/test', (req: express.Request, res: express.Response) => {
 	res.success();
 });
 
-
 export default router;
