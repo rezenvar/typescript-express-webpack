@@ -1,6 +1,5 @@
 
 
-
 export default {
 	db: {
 		database: 'db_name',

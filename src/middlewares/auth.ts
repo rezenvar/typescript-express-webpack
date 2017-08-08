@@ -1,7 +1,7 @@
 
 
 
-export const AuthMiddleware = (req : Express.Request, res : Express.Response, next: Function) => {
+export const AuthMiddleware = (req, res, next) => {
 	// do authorization check
 	next();
 }
